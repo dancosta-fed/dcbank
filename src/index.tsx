@@ -13,20 +13,29 @@ createServer({
       transactions: [
         {
           id: 1,
-          title: 'Freenlance',
-          amount: 800,
+          title: 'Freelance',
+          amount: 8000,
           type: 'deposit',
-          category: 'work',
+          category: 'dev work',
           createdAt: new Date('2022-02-01 09:00:00'),
         },
 
         {
           id: 2,
-          title: 'McDonals',
+          title: 'McDonalds',
           amount: 38,
           type: 'withdraw',
           category: 'lunch',
           createdAt: new Date('2022-04-01 13:33:42'),
+        },
+
+        {
+          id: 3,
+          title: 'Rent',
+          amount: 1700,
+          type: 'withdraw',
+          category: 'housing',
+          createdAt: new Date('2022-04-10 09:30:00'),
         }
       ]
     })

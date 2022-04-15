@@ -1,7 +1,6 @@
-import { useState, FormEvent, useContext } from "react";
-import { TransactionsContext } from "../../TransactionsContext";
+import { useState, FormEvent } from "react";
 import { Container, TransactionTypeContainer, RadioBox } from "./styles";
-import { api } from "../services/api"
+import { useTransactions } from "../../hooks/useTransactions";
 import Modal from "react-modal";
 import closeImg from "../../assets/close.svg";
 import incomeImg from "../../assets/income.svg";
@@ -17,7 +16,7 @@ export function NewTransactionModal({
   onRequestClose,
 }: NewTransactionProps) {
 
-  const { createTransaction } = useContext(TransactionsContext)
+  const { createTransaction } = useTransactions()
 
   const [title, setTitle] = useState('')
   const [amount, setAmount] = useState(0)
@@ -34,7 +33,7 @@ export function NewTransactionModal({
       type,
     })
     
-    setTitle('')
+    setTitle('') 
     setAmount(0)
     setCategory('')
     setType('deposit')
@@ -62,13 +61,15 @@ export function NewTransactionModal({
           placeholder="Title" 
           value={title}
           onChange={event => setTitle(event.target.value)}
+          required
         />
 
         <input 
           type="number" 
           placeholder="Amount" 
           value={amount}
-          onChange={event => setAmount(Number(event.target.value))}          
+          onChange={event => setAmount(Number(event.target.value))}  
+          required        
         />
 
         <TransactionTypeContainer>
@@ -102,7 +103,8 @@ export function NewTransactionModal({
         <input 
           placeholder="Category" 
           value={category}
-          onChange={event => setCategory(event.target.value)}        
+          onChange={event => setCategory(event.target.value)} 
+          required       
         />
 
         <button type="submit">Register</button>

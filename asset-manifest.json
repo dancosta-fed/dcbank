@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/dcbank/static/js/main.86a5479d.js",
+    "main.js": "/dcbank/static/js/main.2ccdd58c.js",
     "static/media/profiles.svg": "/dcbank/static/media/profiles.b2fccf4488f346b63b9383d4968d65b3.svg",
     "static/media/total.svg": "/dcbank/static/media/total.e90c2d1e4d0cdd036cc577afd9f496eb.svg",
     "static/media/outcome.svg": "/dcbank/static/media/outcome.6eb96d3079777422e5bd5deaa688a46e.svg",
     "static/media/income.svg": "/dcbank/static/media/income.d58effe2f7ca5d17f64c8350e5fa2fe2.svg",
     "index.html": "/dcbank/index.html",
     "static/media/close.svg": "/dcbank/static/media/close.f62862c6571367515ce17c7b4e77a1fc.svg",
-    "main.86a5479d.js.map": "/dcbank/static/js/main.86a5479d.js.map"
+    "main.2ccdd58c.js.map": "/dcbank/static/js/main.2ccdd58c.js.map"
   },
   "entrypoints": [
-    "static/js/main.86a5479d.js"
+    "static/js/main.2ccdd58c.js"
   ]
 }
